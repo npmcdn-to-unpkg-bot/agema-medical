@@ -1,0 +1,49 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.31/css/tachyons.min.css">
+  <title></title>
+  <script src="https://use.typekit.net/tkk1xbp.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<style media="screen">
+  * {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.page-wrap {
+min-height: 100%;
+/* equal to footer height */
+margin-bottom: -125px;
+}
+.page-wrap:after {
+content: "";
+display: block;
+}
+.site-footer, .page-wrap:after {
+height: 125px;
+}
+
+.bg-red {
+background-color: #B92025;
+}
+
+.red {
+  color: #B92025;
+}
+
+.bg-blue {
+  background-color: #1c274a;
+}
+
+.blue {
+  color: #1c274a;
+}
+  </style>
+</head>
